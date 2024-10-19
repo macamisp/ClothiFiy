@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.AdminController">
+   <children>
+      <ImageView fitHeight="590.0" fitWidth="630.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/qhd_cd5655ac3b91292e4b0ac9545feca986.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="367.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME" wrappingWidth="208.13671875">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Button ellipsisString="50" layoutX="9.0" layoutY="111.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #0D92F4;" text="PLACE ORDER" textFill="#f4f6ff">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <ImageView fitHeight="82.0" fitWidth="226.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/download-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="272.0" layoutX="306.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Clothes.gif" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="4.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recent Order" wrappingWidth="208.13671875" />
+      <Button ellipsisString="50" layoutX="9.0" layoutY="147.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #98cff8;" text="MANAGE PRODUCT">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button ellipsisString="50" layoutX="9.0" layoutY="183.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #98cff8;" text="MANAGE SUPLIERS">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button ellipsisString="50" layoutX="9.0" layoutY="218.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #98cff8;" text="VIEW REPORTS">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button ellipsisString="50" layoutX="9.0" layoutY="258.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #98cff8;" text="MANAGE CUSTOMER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button ellipsisString="50" layoutX="9.0" layoutY="295.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #98cff8;" text="MANAGE EMPLOYEES">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button ellipsisString="50" layoutX="517.0" layoutY="386.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #98cff8;" text="BACK">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <TableView layoutX="-10.0" layoutY="418.0" opacity="0.55" prefHeight="150.0" prefWidth="640.0" style="-fx-background-color: #081c52;">
+         <columns>
+            <TableColumn prefWidth="109.0" text="C1" />
+            <TableColumn prefWidth="102.0" text="C2" />
+            <TableColumn prefWidth="107.0" text="C1" />
+            <TableColumn prefWidth="142.0" text="C1" />
+            <TableColumn prefWidth="150.0" text="C1" />
+         </columns>
+      </TableView>
+      <Button ellipsisString="50" layoutX="397.0" layoutY="386.0" mnemonicParsing="false" opacity="0.62" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: RED;" text="LOGOUT" textFill="WHITE">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button ellipsisString="50" layoutX="530.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: blue;" text="EDIT" textFill="#f4f6ff">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button ellipsisString="50" layoutX="530.0" layoutY="51.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: blue;" text="password" textFill="#f4f6ff">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/src/main/java/main/Main.java;D:/PORJECTS/saralaFation/Sarala_Fation/Fation/src/main/java/main/Starter.java;D:/PORJECTS/saralaFation/Sarala_Fation/Fation/src/main/java/repository/custom/CustomerDao.java;D:/PORJECTS/saralaFation/Sarala_Fation/Fation/src/main/java/repository/CrudRepository.java;D:/PORJECTS/saralaFation/Sarala_Fation/Fation/src/main/java/service/custom/ItemService.java;D:/PORJECTS/saralaFation/Sarala_Fation/Fation/src/main/java/service/ServiceFactory.java;D:/PORJECTS/saralaFation/Sarala_Fation/Fation/pom.xml" />
+  </component>
+</project>
