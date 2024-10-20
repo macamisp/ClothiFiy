@@ -39,4 +39,6 @@ public class Enter {
     Window window = ((Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow());
     window.hide();
     }
+
 }
+
