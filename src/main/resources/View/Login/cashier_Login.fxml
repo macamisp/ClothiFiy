@@ -27,14 +27,14 @@
             <Font size="48.0" />
          </font>
       </Text>
-      <Button ellipsisString="50" layoutX="36.0" layoutY="463.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #0D92F4;" text="LOGIN" textFill="#f4f6ff">
+      <Button ellipsisString="50" layoutX="36.0" layoutY="463.0" mnemonicParsing="false" onAction="#logonaction" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #0D92F4;" text="LOGIN" textFill="#f4f6ff">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </Button>
       <TextField layoutX="36.0" layoutY="378.0" opacity="0.68" prefHeight="25.0" prefWidth="226.0" promptText="username" />
       <TextField layoutX="36.0" layoutY="419.0" opacity="0.68" prefHeight="25.0" prefWidth="226.0" promptText="password" />
-      <Button ellipsisString="50" layoutX="479.0" layoutY="488.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #98cff8;" text="BACK">
+      <Button ellipsisString="50" layoutX="479.0" layoutY="488.0" mnemonicParsing="false" onAction="#backonaction" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #98cff8;" text="BACK">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
