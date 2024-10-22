@@ -54,4 +54,17 @@ public class AdminController {
         Window window = ((Stage) ((Node) Event.getSource()).getScene().getWindow());
         window.hide();
     }
+@FXML
+public void back1(ActionEvent event) {
+    Stage stage = new Stage();
+    try {
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/Home/admin_Home.fxml"))));
+        stage.show();
+    } catch (IOException e) {
+        e.printStackTrace();
+        throw new RuntimeException(e);
+    }
+    Window window = ((Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow());
+    window.hide();
+    }
 }

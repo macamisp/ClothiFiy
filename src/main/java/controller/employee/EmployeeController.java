@@ -23,30 +23,6 @@ public class EmployeeController {
         window.hide();
         
     }
-
-
-
-
-
-@FXML
-    public void backonaction(ActionEvent Event) {
-            Stage stage = new Stage();
-            try {
-                stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/enteer/enterns.fxml"))));
-                stage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-                throw new RuntimeException(e);
-            }
-            Window window = ((Stage) ((Node) Event.getSource()).getScene().getWindow());
-            window.hide();
-        }
-
-
-
-
-
-
 @FXML
     public void placeorder(ActionEvent event) {
 
@@ -61,12 +37,6 @@ public class EmployeeController {
             Window window = ((Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow());
             window.hide();
         }
-
-
-
-
-
-
 @FXML
     public void produt(ActionEvent event) {
 
@@ -81,12 +51,6 @@ public class EmployeeController {
             Window window = ((Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow());
             window.hide();
         }
-
-
-
-
-
-
 @FXML
     public void supplier(ActionEvent event) {
         Stage stage = new Stage();
@@ -100,11 +64,6 @@ public class EmployeeController {
         Window window = ((Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow());
         window.hide();
     }
-
-
-
-
-
 @FXML
     public void reports(ActionEvent event) {
     Stage stage = new Stage();
@@ -118,14 +77,6 @@ public class EmployeeController {
     Window window = ((Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow());
     window.hide();
     }
-
-
-
-
-
-
-
-
 @FXML
     public void custpomer(ActionEvent event) {
     Stage stage = new Stage();
@@ -139,14 +90,6 @@ public class EmployeeController {
     Window window = ((Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow());
     window.hide();
     }
-
-
-
-
-
-
-
-
 @FXML
     public void etid(ActionEvent event) {
         Stage stage = new Stage();
@@ -160,18 +103,6 @@ public class EmployeeController {
         Window window = ((Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow());
         window.hide();
     }
-
-
-
-
-
-
-
-
-
-
-
-
 @FXML
     public void passwrd(ActionEvent event) {
         Stage stage = new Stage();
@@ -186,18 +117,6 @@ public class EmployeeController {
         window.hide();
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
 @FXML
     public void LOGOUT(ActionEvent event) {
         Stage stage = new Stage();
@@ -211,26 +130,30 @@ public class EmployeeController {
         Window window = ((Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow());
         window.hide();
     }
-
-
-
-
-
-
-
-
-
 @FXML
     public void BACK(ActionEvent event) {
         Stage stage = new Stage();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/Login/cashier_Login.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/Home/employeeHome.fxml"))));
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException(e);
         }
         Window window = ((Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow());
+        window.hide();
+    }
+    @FXML
+    public void backonaction(ActionEvent Event) {
+        Stage stage = new Stage();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/enteer/enterns.fxml"))));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+        Window window = ((Stage) ((Node) Event.getSource()).getScene().getWindow());
         window.hide();
     }
 }
