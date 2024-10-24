@@ -12,6 +12,8 @@ import java.io.IOException;
 public class EmployeeController {
 @FXML
     public void logonaction(ActionEvent Event) {
+
+
         Stage stage = new Stage();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/Home/employeeHome.fxml"))));
@@ -94,7 +96,7 @@ public class EmployeeController {
     public void etid(ActionEvent event) {
         Stage stage = new Stage();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/Managemnet/employeeManege.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/ editprofile/employeeedit.fxml"))));
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
