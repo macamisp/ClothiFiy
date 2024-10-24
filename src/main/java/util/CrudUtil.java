@@ -1,24 +1,20 @@
 package util;
 
-
-import db.DBConnection;
+import DB.DBConnection;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-//All Crud
+
 public class CrudUtil {
-    public static <T> T execute(String sql, Object... args) throws SQLException, ClassNotFoundException {
-        PreparedStatement psTm = DBConnection.getInstance().getConnection()
-                .prepareStatement(sql);
-
-        for (int i = 0; i < args.length; i++) {
-            psTm.setObject((i + 1), args[i]);
+    public static <T> T execute(String SQL, Object... params) throws SQLException {
+        PreparedStatement psTm = DBConnection.getInstance().getConnection().prepareStatement(SQL);
+        for (int i = 0; i < params.length; i++) {
+            psTm.setObject(i + 1, params[i]);
         }
-
-        if (sql.startsWith("SELECT") || sql.startsWith("select")) {
+        if (SQL.startsWith("SELECT") || SQL.startsWith("select")){
             return (T) psTm.executeQuery();
+        }else {
+            return (T) (Boolean) (psTm.executeUpdate() > 0);
         }
-        return (T) (Boolean) (psTm.executeUpdate()>0);
     }
 }
-

@@ -1,4 +1,4 @@
-package enter;
+package controller.enter;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

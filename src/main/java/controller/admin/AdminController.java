@@ -13,7 +13,7 @@ public class AdminController {
     public void LoginONACTION(ActionEvent Event) {
         Stage stage = new Stage();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("View/Home/admin_Home.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/Home/admin_Home.fxml"))));
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);

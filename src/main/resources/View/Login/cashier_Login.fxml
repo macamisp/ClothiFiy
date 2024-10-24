@@ -32,8 +32,8 @@
             <Insets />
          </opaqueInsets>
       </Button>
-      <TextField layoutX="36.0" layoutY="378.0" onAction="#textname" opacity="0.68" prefHeight="25.0" prefWidth="226.0" promptText="username" />
-      <TextField layoutX="36.0" layoutY="419.0" onAction="#txtpasswerd" opacity="0.68" prefHeight="25.0" prefWidth="226.0" promptText="password" />
+      <TextField fx:id="txtUserName" layoutX="36.0" layoutY="378.0" opacity="0.68" prefHeight="25.0" prefWidth="226.0" promptText="username" />
+      <TextField fx:id="txtPassword" layoutX="36.0" layoutY="419.0" opacity="0.68" prefHeight="25.0" prefWidth="226.0" promptText="password" />
       <Button ellipsisString="50" layoutX="479.0" layoutY="488.0" mnemonicParsing="false" onAction="#backonaction" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #98cff8;" text="BACK">
          <opaqueInsets>
             <Insets />
