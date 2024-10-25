@@ -23,7 +23,7 @@
             <Font size="36.0" />
          </font>
       </Text>
-      <Button ellipsisString="50" layoutX="305.0" layoutY="160.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #0D92F4;" text="EDIT AND UPDATE" textFill="#f4f6ff">
+      <Button ellipsisString="50" layoutX="305.0" layoutY="160.0" mnemonicParsing="false" onAction="#updateACTION" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #0D92F4;" text="EDIT AND UPDATE" textFill="#f4f6ff">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -38,13 +38,13 @@
             <Insets />
          </opaqueInsets>
       </Button>
-      <TableView layoutX="-20.0" layoutY="408.0" opacity="0.55" prefHeight="150.0" prefWidth="650.0" style="-fx-background-color: #081c52;">
+      <TableView fx:id="tblVIEW" layoutX="-20.0" layoutY="408.0" opacity="0.55" prefHeight="150.0" prefWidth="650.0" style="-fx-background-color: #081c52;">
          <columns>
-            <TableColumn prefWidth="109.0" text="C1" />
-            <TableColumn prefWidth="102.0" text="C2" />
-            <TableColumn prefWidth="107.0" text="C1" />
-            <TableColumn prefWidth="142.0" text="C1" />
-            <TableColumn prefWidth="150.0" text="C1" />
+            <TableColumn fx:id="colId" prefWidth="81.0" text="ID" />
+            <TableColumn fx:id="colMobile" prefWidth="139.0" text="Mobile" />
+            <TableColumn fx:id="colName" prefWidth="117.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="155.0" text="Address" />
+            <TableColumn fx:id="colEmail" prefWidth="157.0" text="Email" />
          </columns>
       </TableView>
       <Text fill="WHITE" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD Supplier" wrappingWidth="208.13671875" />
@@ -53,28 +53,28 @@
             <Insets />
          </opaqueInsets>
       </Button>
-      <TextField layoutX="12.0" layoutY="113.0" prefHeight="25.0" prefWidth="175.0" promptText="search by mobile number" />
-      <Button ellipsisString="50" layoutX="190.0" layoutY="113.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #98cff8;" text="search">
+      <TextField fx:id="txtsearch" layoutX="12.0" layoutY="113.0" prefHeight="25.0" prefWidth="175.0" promptText="search by mobile number" />
+      <Button ellipsisString="50" layoutX="190.0" layoutY="113.0" mnemonicParsing="false" onAction="#searchACTION" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #98cff8;" text="search">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </Button>
-      <TextField layoutX="132.0" layoutY="172.0" opacity="0.44" />
-      <TextField layoutX="132.0" layoutY="208.0" opacity="0.44" prefHeight="25.0" prefWidth="149.0" />
-      <TextField layoutX="133.0" layoutY="276.0" opacity="0.44" />
+      <TextField fx:id="txtId" layoutX="132.0" layoutY="172.0" opacity="0.44" />
+      <TextField fx:id="txtMobile" layoutX="132.0" layoutY="208.0" opacity="0.44" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="txtAdress" layoutX="133.0" layoutY="276.0" opacity="0.44" />
       <Text fill="WHITE" layoutX="14.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier ID" />
       <Text fill="WHITE" layoutX="14.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile" />
       <Text fill="WHITE" layoutX="14.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
       <Text fill="WHITE" layoutX="15.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
       <Text fill="WHITE" layoutX="15.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
-      <TextField layoutX="133.0" layoutY="309.0" opacity="0.44" />
-      <TextField layoutX="132.0" layoutY="244.0" opacity="0.44" prefHeight="25.0" prefWidth="149.0" />
-      <Button ellipsisString="50" layoutX="305.0" layoutY="205.0" mnemonicParsing="false" opacity="0.96" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: RED;" text="DELETE" textFill="WHITE">
+      <TextField fx:id="txtEmail" layoutX="133.0" layoutY="309.0" opacity="0.44" />
+      <TextField fx:id="txtName" layoutX="132.0" layoutY="244.0" opacity="0.44" prefHeight="25.0" prefWidth="149.0" />
+      <Button ellipsisString="50" layoutX="305.0" layoutY="205.0" mnemonicParsing="false" onAction="#deleteACTION" opacity="0.96" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: RED;" text="DELETE" textFill="WHITE">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button ellipsisString="50" layoutX="305.0" layoutY="122.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: blue;" text=" ADD SUPPLIER" textFill="#f4f6ff">
+      <Button ellipsisString="50" layoutX="305.0" layoutY="122.0" mnemonicParsing="false" onAction="#addACTION" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: blue;" text=" ADD SUPPLIER" textFill="#f4f6ff">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>

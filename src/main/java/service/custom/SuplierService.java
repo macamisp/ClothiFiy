@@ -11,7 +11,7 @@ public interface SuplierService extends Superservice {
 
     boolean deleteSuplier(String suplierId);
 
-    EmployeeDTO searchSuplier(String search);
+    SuplierDTO searchSuplier(String search);
 
     boolean updateSuplier(SuplierDTO suplier);
 

@@ -17,22 +17,23 @@ public class SuplierImpl implements SuplierService {
 
     @Override
     public boolean addSuplier(SuplierDTO suplier) {
-        return SuplierDao.save(suplier);
+        return suplierDao.save(suplier);
     }
 
     @Override
     public boolean deleteSuplier(String suplierId) {
-        return SuplierDao.delete(suplierId);
+        return suplierDao.delete(suplierId);
     }
 
     @Override
-    public EmployeeDTO searchSuplier(String search) {
+    public SuplierDTO searchSuplier(String search) {
         return suplierDao.search(search);
     }
 
     @Override
     public boolean updateSuplier(SuplierDTO suplier) {
-        return suplierDao.update(suplier)    }
+        return suplierDao.update(suplier);
+    }
 
     @Override
     public String generateSuplierId() {

@@ -164,7 +164,7 @@ public class manageController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        colId.setCellValueFactory(new PropertyValueFactory<>("id"));
+        colId.setCellValueFactory(new PropertyValueFactory<>("EmployeeId"));
         colName.setCellValueFactory(new PropertyValueFactory<>("name"));
         colMobile.setCellValueFactory(new PropertyValueFactory<>("mobile"));
         colAddrees.setCellValueFactory(new PropertyValueFactory<>("address"));
