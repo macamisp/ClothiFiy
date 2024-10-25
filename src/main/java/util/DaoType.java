@@ -1,5 +1,10 @@
 package util;
 
 public enum DaoType {
-    CUSTOMER,EMPLOYEE,SUPPLIER,PRODUCT
+    CUSTOMER,
+    SUPPLIER,
+    EMPLOYEE,
+    PRODUCT,
+    ADMIN,
+    ORDER
 }

@@ -3,5 +3,5 @@ package repository.custom;
 
 import repository.CrudDao;
 
-public interface SuplierDao extends CrudDao {
+public interface ProductDAo extends CrudDao {
 }

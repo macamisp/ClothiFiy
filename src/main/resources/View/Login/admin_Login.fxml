@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.AdminController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.LginController">
    <children>
       <AnchorPane prefHeight="528.0" prefWidth="593.0">
          <children>
@@ -34,8 +34,8 @@
                   <Insets />
                </opaqueInsets>
             </Button>
-            <TextField layoutX="36.0" layoutY="378.0" opacity="0.68" prefHeight="25.0" prefWidth="226.0" promptText="username" />
-            <TextField layoutX="36.0" layoutY="419.0" opacity="0.68" prefHeight="25.0" prefWidth="226.0" promptText="password" />
+            <TextField fx:id="txtname" layoutX="36.0" layoutY="378.0" opacity="0.68" prefHeight="25.0" prefWidth="226.0" promptText="username" />
+            <TextField fx:id="txtpasswed" layoutX="36.0" layoutY="419.0" opacity="0.68" prefHeight="25.0" prefWidth="226.0" promptText="password" />
             <Button ellipsisString="50" layoutX="479.0" layoutY="488.0" mnemonicParsing="false" onAction="#backONACTION" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #98cff8;" text="BACK">
                <opaqueInsets>
                   <Insets />

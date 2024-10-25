@@ -1,7 +1,8 @@
 package repository.custom;
 
-import entity.Customer;
+import dto.CustomerDTO;
 import repository.CrudDao;
 
-public interface CustomerDao extends CrudDao<Customer> {
+public interface CustomerDao extends CrudDao<CustomerDTO> {
+    String findLastId();
 }

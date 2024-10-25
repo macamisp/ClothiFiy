@@ -1,9 +1,9 @@
 package repository.custom.impl;
 
 import javafx.collections.ObservableList;
-import repository.custom.SuplierDao;
+import repository.custom.ProductDAo;
 
-public class SupplierDaoImpl implements SuplierDao {
+public class ProductDaoImpl implements ProductDAo {
 
 
     @Override

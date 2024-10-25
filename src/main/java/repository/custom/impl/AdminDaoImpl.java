@@ -1,18 +1,17 @@
 package repository.custom.impl;
 
+import dto.AdminDTO;
 import javafx.collections.ObservableList;
-import repository.custom.SuplierDao;
+import repository.custom.AdminDao;
 
-public class SupplierDaoImpl implements SuplierDao {
-
-
+public class AdminDaoImpl implements AdminDao {
     @Override
-    public boolean save(Object o) {
+    public boolean save(AdminDTO admin) {
         return false;
     }
 
     @Override
-    public ObservableList getAll() {
+    public ObservableList<AdminDTO> getAll() {
         return null;
     }
 
@@ -22,12 +21,12 @@ public class SupplierDaoImpl implements SuplierDao {
     }
 
     @Override
-    public Object search(String id) {
+    public AdminDTO search(String id) {
         return null;
     }
 
     @Override
-    public boolean update(Object o) {
+    public boolean update(AdminDTO admin) {
         return false;
     }
 }

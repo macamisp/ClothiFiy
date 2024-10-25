@@ -3,14 +3,12 @@ package controller.enter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.Objects;
+
 public class Enter {
     @FXML
     public void ADMINONACTION(ActionEvent event) {
@@ -30,7 +28,7 @@ public class Enter {
     public void CASHIERONACTION(ActionEvent event) {
     Stage stage = new Stage();
     try {
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/Login/cashier_Login.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/View/Login/employee_Login.fxml"))));
         stage.show();
     } catch (IOException e) {
         e.printStackTrace();

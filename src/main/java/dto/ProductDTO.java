@@ -4,15 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-public class EmployeeDTO {
-    private String EmployeeId;
-    private String Mobile;
-    private String Name;
-    private String Address;
-    private String Email;
+public class ProductDTO {
+        private Integer ItemID;
+        private String Name;
+        private String Size;
+        private  Integer Price;
+        private String Stock;
 }
