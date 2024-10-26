@@ -1,6 +1,4 @@
 package repository.custom.impl;
-
-import dto.EmployeeDTO;
 import dto.SuplierDTO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

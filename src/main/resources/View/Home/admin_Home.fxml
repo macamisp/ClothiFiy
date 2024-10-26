@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.LginController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.HomeController">
    <children>
       <ImageView fitHeight="590.0" fitWidth="630.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -35,7 +35,7 @@
             <Image url="@../../img/Clothes.gif" />
          </image>
       </ImageView>
-      <Button ellipsisString="50" layoutX="9.0" layoutY="147.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #98cff8;" text="MANAGE PRODUCT">
+      <Button ellipsisString="50" layoutX="9.0" layoutY="147.0" mnemonicParsing="false" onAction="#productbutton" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #98cff8;" text="MANAGE PRODUCT">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -43,7 +43,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button ellipsisString="50" layoutX="9.0" layoutY="183.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #98cff8;" text="MANAGE SUPLIERS">
+      <Button ellipsisString="50" layoutX="9.0" layoutY="183.0" mnemonicParsing="false" onAction="#supplierbutton" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #98cff8;" text="MANAGE SUPLIERS">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -51,7 +51,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button ellipsisString="50" layoutX="9.0" layoutY="218.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #98cff8;" text="VIEW REPORTS">
+      <Button ellipsisString="50" layoutX="9.0" layoutY="218.0" mnemonicParsing="false" onAction="#viewreportsbutton" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #98cff8;" text="VIEW REPORTS">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -59,7 +59,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button ellipsisString="50" layoutX="9.0" layoutY="258.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #98cff8;" text="MANAGE CUSTOMER">
+      <Button ellipsisString="50" layoutX="9.0" layoutY="258.0" mnemonicParsing="false" onAction="#customerbuton" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: #98cff8;" text="MANAGE CUSTOMER">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>

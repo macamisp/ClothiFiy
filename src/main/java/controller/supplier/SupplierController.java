@@ -42,6 +42,8 @@ public class SupplierController implements Initializable {
         });
 
         loadTable();
+
+        txtId.setText(generateSuplierId());
     }
 
     @FXML

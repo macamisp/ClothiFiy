@@ -9,9 +9,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ProductDTO {
-        private Integer ItemID;
+        private String ID;
         private String Name;
         private String Size;
-        private  Integer Price;
+        private String Price;
         private String Stock;
 }
